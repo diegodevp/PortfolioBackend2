@@ -1,4 +1,4 @@
-FROM openjdk:20
+FROM amazoncorretto:17-alpine-jdk
 MAINTAINER DMF
-COPY target/dmf-0.0.1-SNAPSHOT.jar dmf-app.jar
+COPY target/dmf-0.0.1-SNAPSHOT dmf-app.jar
 ENTRYPOINT ["java", "-jar", "/dmf-app.jar"]
