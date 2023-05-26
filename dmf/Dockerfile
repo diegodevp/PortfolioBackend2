@@ -1,4 +1,4 @@
-FROM amazoncorretto:20-alpine-jdk
+FROM amazoncorretto:17-alpine-jdk
 LABEL authors="diegodevs"
 COPY target/dmf-0.0.1-SNAPSHOT.jar dmf-app.jar
 ENTRYPOINT ["java", "-jar", "/dmf-app.jar"]
